@@ -8,11 +8,21 @@
 # Author: Andrew Smith ( http://littlesvr.ca/contact.php )
 # Version 0.1 changes:
 # - Initial version.
-# 
-# This program is distributed only under the:
-# GNU Affero General Public License version 3.
-# Contact me if that's a problem for you for some reason.
 #
+# Copyright (C) 2015 Andrew Smith
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 eval "use Image::ExifTool; 1" || die "Couldn't load the ExifTool perl module. Please make sure Image::ExifTool is installed.\n";
 
@@ -25,12 +35,12 @@ my @supportedTags = (
     "UsageTerms"
 );
 my %licenceURLs = (
-    "BY" => "http://creati-ecommons.org/licenses/by/4.0/",
-    "BY-NC" => "http://creativecommons.org/licenses/by-nc/4.0/", 
-    "BY-NC-ND" => "http://creativecommons.org/licenses/by-nd/4.0/", 
-    "BY-NC-SA" => "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "BY-ND" => "http://creativecommons.org/licenses/by-nd/4.0/", 
-    "BY-SA" => "http://creativecommons.org/licenses/by-sa/4.0/"
+    "BY" => "https://creati-ecommons.org/licenses/by/4.0/",
+    "BY-NC" => "https://creativecommons.org/licenses/by-nc/4.0/", 
+    "BY-NC-ND" => "https://creativecommons.org/licenses/by-nd/4.0/", 
+    "BY-NC-SA" => "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "BY-ND" => "https://creativecommons.org/licenses/by-nd/4.0/", 
+    "BY-SA" => "https://creativecommons.org/licenses/by-sa/4.0/"
 );
 my %licenceNames = (
     "BY" => "Attribution 4.0 International",
@@ -126,7 +136,7 @@ elsif ($readOrWrite eq "--write") {
         } 
     }
     # Generate UsageTerms automatically, to looks something like this:
-    # This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.
+    # This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.
     if ($licenceCodeUsed) {
         my $usageTerms = "This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;";
         $usageTerms .= $licenceURLs{"$licenceCodeUsed"};
