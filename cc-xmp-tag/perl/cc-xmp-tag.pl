@@ -85,9 +85,6 @@ if ($readOrWrite eq "--read") {
         if (defined($value)) {
             print $value . "\n";
         }
-        else {
-            print "No value for tag '$tagName'\n";
-        }
     }
 }
 elsif ($readOrWrite eq "--write") {
