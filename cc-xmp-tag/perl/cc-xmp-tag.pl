@@ -35,7 +35,7 @@ my @supportedTags = (
     "UsageTerms"
 );
 my %licenceURLs = (
-    "BY" => "https://creati-ecommons.org/licenses/by/4.0/",
+    "BY" => "https://creativecommons.org/licenses/by/4.0/",
     "BY-NC" => "https://creativecommons.org/licenses/by-nc/4.0/", 
     "BY-NC-ND" => "https://creativecommons.org/licenses/by-nd/4.0/", 
     "BY-NC-SA" => "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -46,7 +46,7 @@ my %licenceNames = (
     "BY" => "Attribution 4.0 International",
     "BY-NC" => "Attribution-NonCommercial 4.0 International", 
     "BY-NC-ND" => "Attribution-NonCommercial-NoDerivs 4.0 International", 
-    "BY-NC-SA" => "Attribution-NonCommercial-ShareAlike  4.0 International",
+    "BY-NC-SA" => "Attribution-NonCommercial-ShareAlike 4.0 International",
     "BY-ND" => "Attribution-NoDerivs 4.0 International", 
     "BY-SA" => "Attribution-ShareAlike 4.0 International"
 );
