@@ -127,7 +127,7 @@ elsif ($readOrWrite eq "--write") {
     
     # !!Assume not public domain, perhaps rethink this later
     if ($wroteSomething) {
-        ($success, $errStr) = $exifTool->SetNewValue("Marked", "True");
+        ($success, $errStr) = $exifTool->SetNewValue("Marked", "False");
         if (!$success) {
             die "Failed to set tag 'Marked': " . $errStr;
         } 
