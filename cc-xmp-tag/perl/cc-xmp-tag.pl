@@ -24,7 +24,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-eval "use Image::ExifTool; 1" || die "Couldn't load the ExifTool perl module. Please make sure Image::ExifTool is installed.\n";
+eval "use Image::ExifTool; 1" || die "Couldn't load the ExifTool perl module. Please make sure Image::ExifTool is installed.\nOn Debian GNU/Linux, you can apt-get install libimage-exiftool-perl";
 
 my @supportedTags = (
     "AttributionName", 
