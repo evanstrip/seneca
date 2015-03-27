@@ -5,12 +5,13 @@
 # This program is a part of the cc-xmp-tag set of tools. Run it with 
 # no parameters to get help.
 # 
-# Author: Andrew Smith ( http://littlesvr.ca )
+# Author: Andrew Smith ( http://littlesvr.ca/contact.php )
 # Version 0.1 changes:
 # - Initial version.
 # 
-# This program is distributed only under Version 2, June 1991 of the GPL, not
-# any later versions. Contact me if that's a problem for you for some reason.
+# This program is distributed only under the:
+# GNU Affero General Public License version 3.
+# Contact me if that's a problem for you for some reason.
 #
 
 eval "use Image::ExifTool; 1" || die "Couldn't load the ExifTool perl module. Please make sure Image::ExifTool is installed.\n";
